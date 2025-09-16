@@ -1,6 +1,6 @@
 
 flowchart TB
-    A[Load Data<br/>(insurance.csv)] --> B[EDA<br/>(shape, head, info, describe, plots)]
+    A[Load Data<br/>("insurance.csv")] --> B[EDA<br/>(shape, head, info, describe, plots)]
     B --> C[Data Cleaning<br/>(drop duplicates, check nulls)]
     C --> D[Preprocessing<br/>map sex & smoker → is_female/is_smoker]
     D --> E[Categorical Encoding<br/>one-hot encode region & bmi_category]
