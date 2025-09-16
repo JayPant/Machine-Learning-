@@ -1,4 +1,4 @@
-# foundation.ipynb — README
+
 
 ## Overview
 This notebook performs a complete end‑to‑end analysis on the `insurance.csv` dataset. It covers exploratory data analysis (EDA), data cleaning and preprocessing, feature engineering, scaling, feature selection, model training, and basic evaluation. The goal is to build a simple regression model to predict insurance charges and provide guidance for improvements.
