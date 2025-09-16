@@ -38,9 +38,9 @@ Preprocessing Details
 Modeling & Results
 - Model type: Linear Regression (scikit-learn).
 - Final evaluation metrics (from the notebook run):
-    - R² ≈ 0.7310
-    - Adjusted R² ≈ 0.7307
-- Interpretation: The linear model explains about 73% of the variance in price on the test set. Consider non-linear models or more feature engineering for further improvement.
+    - R² ≈ 0.7310(With Label Encoding) & R² ≈ 0.8396(With One Hot Encoding)
+    - Adjusted R² ≈ 0.7307(With Label Encoding) & Adjusted R² ≈ 0.8387(With One Hot Encoding)
+- Interpretation: The linear model explains about 83% of the variance in price on the test set. Consider non-linear models or more feature engineering for further improvement.
 
 How to Reproduce
 1. Ensure dependencies are installed (pip install pandas numpy scikit-learn seaborn matplotlib).
