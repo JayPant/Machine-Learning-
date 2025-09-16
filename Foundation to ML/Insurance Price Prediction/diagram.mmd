@@ -1,0 +1,14 @@
+
+flowchart TB
+    A[Load Data<br/>(insurance.csv)] --> B[EDA<br/>(shape, head, info, describe, plots)]
+    B --> C[Data Cleaning<br/>(drop duplicates, check nulls)]
+    C --> D[Preprocessing<br/>map sex & smoker → is_female/is_smoker]
+    D --> E[Categorical Encoding<br/>one-hot encode region & bmi_category]
+    E --> F[Feature Engineering<br/>create bmi_category bins]
+    F --> G[Feature Scaling<br/>StandardScaler → age, bmi, children]
+    G --> H[Feature Selection<br/>pearsonr, chi-square tests]
+    H --> I[Train/Test Split<br/>train_test_split (80/20)]
+    I --> J[Model Training<br/>LinearRegression.fit]
+    J --> K[Prediction<br/>model.predict]
+    K --> L[Evaluation<br/>R2, Adjusted R2]
+    L --> M[Interpretation & Next Steps<br/>feature importance, tune/try other models, deploy]
